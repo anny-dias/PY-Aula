@@ -1,5 +1,5 @@
-a = int(input("Digite um número A:"))
-b = int(input("Digite outro número B:"))
+a = int(input("Digite um número A: "))
+b = int(input("Digite outro número B: "))
 c = b
 b = a
 a = c
