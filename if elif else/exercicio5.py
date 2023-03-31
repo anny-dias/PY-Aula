@@ -1,8 +1,8 @@
 numero = int(input("Informe um numero: "))
 
 if numero > 0:
-    print(f"Positivo")
+    print("Positivo")
 elif numero == 0:
-    print(f"Igual a zero")
+    print("Igual a zero")
 else:
-    print(f"Negativo")
+    print("Negativo")
