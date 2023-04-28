@@ -1,0 +1,1 @@
+#Faça uma funçãoque recebeum número inteiro por parâmetro e retorna Truese for par e Falsese for ímpar.
