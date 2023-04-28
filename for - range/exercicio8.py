@@ -1,10 +1,9 @@
 #8.Escreva um algoritmo que solicite o valor de N e calcule o fatorial de N.
 numero = int(input("Informe um número: "))
 
-fatorial = 1          #acumuladora
-while numero >= 1:
-    fatorial *= numero
-    numero -= 1
+fatorial = 1
+for n in range(numero, 0, -1):
+    fatorial *= n
 
-print(f"Fatotial: {fatorial}")
+print(f'Fatorial de {numero} é {fatorial}')
 
