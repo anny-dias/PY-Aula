@@ -15,8 +15,6 @@
 #parâmetros dois números também informados pelo usuário. Após a execução da operação o programa
 #volta a apresentar o menu inicial até que o usuário encerre o programa com a opção 5.
 
-
-
 def menu():
     print("Calculadora: ")
     print("1 -Adição")
@@ -45,25 +43,26 @@ def fim():
     print("Fim do programa")
 
 
-
-num1 = float(input("Informe o primeiro número: "))
-num2 = float(input("Informe o segundo número: "))
-menu()
-opcao = int(input("Selecione sua opção: "))
-
-if opcao == 1:
-    adicao(num1, num2)
-elif opcao == 2:
-    subtracao(num1, num2)
-elif opcao == 3:
-    multiplicacao(num1, num2)
-elif opcao == 4:
-    divisao(num1, num2)
-elif opcao == 5:
-    fim()
-else:
-    print("Opção Inválida")
+while True:
+    menu()
+    opcao = int(input("Selecione sua opção: "))
+    num1 = float(input("Informe o primeiro número: "))
+    num2 = float(input("Informe o segundo número: "))
     
+    if opcao == 1:
+        adicao(num1, num2)
+    elif opcao == 2:
+        subtracao(num1, num2)
+    elif opcao == 3:
+        multiplicacao(num1, num2)
+    elif opcao == 4:
+        divisao(num1, num2)
+    elif opcao == 5:
+        fim()
+        break
+    else:
+        print("Opção Inválida")
+        
     
 
 
