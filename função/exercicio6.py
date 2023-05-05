@@ -4,21 +4,21 @@
 # Peso Ideal (para homens) = (72.7 * altura) -58 
 # Peso Ideal (para mulheres) = (62.1 * altura) -44.7
 
-def peso_ideal(sexo):
+def peso_ideal(altura, sexo):
     if sexo == "F":
-        p = (62.1 * altura) -44.7
-        print(f"O peso ideal, para mulher, é: {p} ")
+        peso = (62.1 * altura) -44.7
+        print(f"O peso ideal, para mulher, é: {peso} ")
     elif sexo == "M":
-        p = (72.7 * altura) -58 
-        print(f"O peso ideal, para homem, é: {p} ")
+        peso = (72.7 * altura) -58 
+        print(f"O peso ideal, para homem, é: {peso} ")
     else:
         print("Opção Inválido")
-    return p 
+    return peso
 
 
 altura = float(input("Infome a sua altura: "))
 sexo = input("Informe o seu sexo (M = Masculino e F = Feminino): ")
-p = peso_ideal(sexo)
+peso = peso_ideal(altura, sexo)
 
 
 
