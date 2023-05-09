@@ -12,9 +12,9 @@ while True:
             break
         
         try:
-            a = float(input('Informe o primeiro número: '))
-            b = float(input('Informe o segundo número: '))
-            c = a + x
+            if opcao >= 1 and opcao <= 4:
+                a = float(input('Informe o primeiro número: '))
+                b = float(input('Informe o segundo número: '))
         except ValueError:
             print('ERRO: os valores informados não são números')
         else:
@@ -35,5 +35,5 @@ while True:
     except ValueError:
         print('ERRO: Digite um valor entre 1 e 5')
     except Exception:
-        print('ERRO: Um erro inesperado aconteceu')
+        print('ERRO: Um erro inesperado')
    
